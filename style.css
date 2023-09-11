@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* hero section */
+
+.hero {
+  height: 60vh;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  color: darkred;
+
+  background-color: rgb(210, 223, 234);
+  padding: 1rem;
+  border-radius: 40px;
+  opacity: 80%;
+  backdrop-filter: blur;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.top-menu {
+  background: rgb(98, 237, 11);
+  color: aliceblue;
+
+  /* to make the nav sticky at top */
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* top menu */
+
+.top-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 1.4rem;
+}
+
+.logo > img {
+  width: 90px;
+  height: 85px;
+}
+.logo:hover {
+  animation: rotate 3s infinite;
+}
+@keyframes {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.top-menu ul li {
+  transition: all 0.5s;
+}
+
+.top-menu ul li:hover {
+  color: bisque;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.content {
+  padding: 1rem 2 rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  height: 60vh;
+  background: url(./asset/img1.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img2 {
+  height: 60vh;
+  background: url(./asset/img2.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img3 {
+  height: 60vh;
+  background: url(./asset/img3.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.img4 {
+  height: 60vh;
+  background: url(./asset/img4.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  background-color: rgb(163, 167, 167);
+  color: aliceblue;
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+footer {
+  background-color: rgb(211, 185, 231);
+  font-size: 2rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
